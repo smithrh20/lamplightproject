@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    background-color: blanchedalmond;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 10%;
+    background-color: black;
+    padding-left: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+#navbar-links{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+#navbar-links a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+#navbar-logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+html, body{
+    height: 100%;
+}
+
+h1{
+    font-size: 1000%;
+    font-family: 'cormorant', serif;
+    font-weight: 100;
+}
+
+h2{
+    font-size: 300%;
+    font-family: 'cormorant';
+    font-weight: 100;
+}
+
+h3{
+    font-size: 175%;
+    font-family: 'cormorant', serif;
+    font-weight: 600;
+}
+
+h4{
+    font-size: 400%;
+    color: whitesmoke;
+    font-family: 'Permanent Marker';
+    font-weight: 100;
+}
+
+h5{
+    font-size: 150%;
+    color: whitesmoke;
+    font-family: 'cormorant', serif;
+    font-weight: 100;
+}
+
+p{
+    font-size: 125%;
+    color: black;
+    font-family: 'cormorant', serif;
+    font-weight: 100;
+}
+
+#galleryWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: min-content;
+    background-color: blanchedalmond;
+}
+
+.photoFrame{
+    margin: 60px;
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 2px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px;
+}
+
+.photoFrame h4{
+    color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#photoDetails{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: min-content;
+    background-color: blanchedalmond;
+}
+
+#photoInfo{
+    margin: 60px;
+    padding: 20px;
+}
+
+#photoInfo h2{
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+
+#photoInfo p{
+    font-size: 200%;
+
+}

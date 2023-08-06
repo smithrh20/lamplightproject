@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+    <div id="galleryBody">
+        <div id="imageGallery">
+            {% for photo in object_list %}
+            <a href=" {% url 'photoDetailsView' photo.pk %}">
+                <img src="{{photo.img}}" alt="">
+            </a>
+        {% endfor %}
+        </div>
+    </div>
+{% endblock %}

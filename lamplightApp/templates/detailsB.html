@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div id="body">
+        <div id="details">
+            <img src="{{ photo.imageURL}}" alt="">
+            <div class="divider"></div>
+            <div id="info">
+                <h3>CAMERA: Canon Rebel SL3</h3>
+                <div class="divider2"></div>
+                <h3>ISO: 3200</h3>
+                <div class="divider2"></div>
+                <h3>F-STOP: f/6.3</h3>
+                
+                <button>ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+
+    {%endblock%}

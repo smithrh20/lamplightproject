@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%load static%}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant">
+    <link rel="stylesheet" href="{% static 'css/homeStylesheet.css'%}">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="navbar">
+                <h5>Lamplight Photography</h5>
+            <div id="navbar-links">
+                <h5><a href="">Home</a></h5>
+                <h5><a href="{% url 'galleryListView' %}">Gallery</a></h5>
+                <h5><a href="">Blog</a></h5>
+                <h5><a href="">Contact</a></h5>
+            </div>
+        </div>
+        <div id="introWrapper">
+            <div id="introName">
+                <h1>Lamplight</h1>
+                <h1>Photography</h1>
+            </div>
+            <div id="showcase1">
+                    <img src="{% static 'images/IMG_8695alt.jpg' %}" alt="" width="100%">
+                    <img src="{% static 'images/IMG_8905alt.jpg' %}" alt="" width="100%">
+                    <img src="{% static 'images/IMG_8676alt.jpg' %}" alt="" width="100%">
+                    <img src="{% static 'images/IMG_8828alt.jpg' %}" alt="" width="100%">
+            </div>
+        </div>
+        <div class="showcase2">
+                <img src="{% static 'images/IMG_8960alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8686alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8695alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8706.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8748alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8777alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8790alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8828alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8868alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8905alt.jpg' %}" alt="" width="100%">
+        </div>
+        <div id="quoteWrapper">
+            <div id="importantQuote">
+                <h3>"If you don't go do what you wanna do, you're just bullshitting yourself."</h3>
+                <p>~Carroll Shelby</p>
+            </div>
+        </div>
+        <div class="showcase2">
+            <img src="OBX-7.jpg" alt="" width="100%">
+                <img src="{% static 'images/IMG_8912alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8915alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8960alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8960alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8965alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8960alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8978alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8777alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8748alt.jpg' %}" alt="" width="100%">
+        </div>
+        <div id="galleryPortalWrapper">
+            <div id="galleryPortalText">
+                <h2>
+                    Want to see all my photos? Go visit my gallery
+                </h2>
+            </div>
+            <div id="galleryPortalLink">
+                <button>Gallery</button>
+            </div>
+        </div>
+        <div class="showcase2">
+                <img src="{% static 'images/IMG_8676alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8686alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8695alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8748alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8777alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8790alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8828alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8868alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8960alt.jpg' %}" alt="" width="100%">
+                <img src="{% static 'images/IMG_8915alt.jpg' %}" alt="" width="100%">
+        </div>
+        <div id="blogPortalWrapper">
+            <div id="blogPortalLink">
+                <button>Blog</button>
+            </div>
+            <div id="blogPortalText">
+                <h2>I also have a blog on here. So check that out.</h2>
+            </div>
+        </div>
+        <div class="showcase2">
+            <img src="{% static 'IMG_8965alt.jpg' %}" alt="" width="100%">
+            <img src="{% static 'IMG_8960alt.jpg' %}" alt="" width="100%">
+            <img src="{% static 'IMG_8978alt.jpg' %}" alt="" width="100%">
+            <img src="{% static 'IMG_8777alt.jpg' %}" alt="" width="100%">
+            <img src="{% static 'IMG_8748alt.jpg' %}" alt="" width="100%">
+        </div>
+        <div id="footer">
+            <h5>Website By: <a href="">Devshark</a></h5>
+        </div>
+    </div>
+</body>
+</html>

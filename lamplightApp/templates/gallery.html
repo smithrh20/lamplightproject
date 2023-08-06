@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/galleryStylesheet.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cormorant">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent Marker">
+    <title>Document</title>
+</head>
+<body>
+    <div id="navbar">
+        <h5>Lamplight Photography</h5>
+    <div id="navbar-links">
+        <h5><a href="">Home</a></h5>
+        <h5><a href="">Gallery</a></h5>
+        <h5><a href="">Blog</a></h5>
+        <h5><a href="">Contact</a></h5>
+    </div>
+</div>
+    <div id="galleryWrapper">
+        {% for Photo in object_list %}
+        <div class="photoFrame">
+            <a href=""><img src="{{photo.img}}" alt="" width="100%"></a>
+            <h4>{{photo.name}}</h4>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
